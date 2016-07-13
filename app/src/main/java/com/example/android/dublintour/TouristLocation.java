@@ -10,7 +10,7 @@ public class TouristLocation {
     private String mPlaceName;
     private String mPlaceDescription;
     private Location mLocationCoordinates;
-    private Drawable mPlaceThumbnail;
+    private int mPlaceThumbnail;
 
     public void TouristLocation(String placeName) {
         mPlaceName = placeName;
@@ -36,11 +36,11 @@ public class TouristLocation {
         return mLocationCoordinates;
     }
 
-    public void setPlaceThumbnail(Drawable placeThumbnail) {
+    public void setPlaceThumbnail(int placeThumbnail) {
         mPlaceThumbnail = placeThumbnail;
     }
 
-    public Drawable getPlaceThumbnail() {
+    public int getPlaceThumbnail() {
         return mPlaceThumbnail;
     }
 }
