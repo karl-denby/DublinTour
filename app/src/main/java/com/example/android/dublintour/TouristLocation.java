@@ -23,7 +23,7 @@ public class TouristLocation {
         return mPlaceName;
     }
 
-    public String getPlaceDescriptiong() {
+    public String getPlaceDescription() {
         return mPlaceDescription;
     }
 
