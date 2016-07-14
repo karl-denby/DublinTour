@@ -12,32 +12,23 @@ public class TouristLocation {
     private Location mLocationCoordinates;
     private int mPlaceThumbnail;
 
-    public void TouristLocation(String placeName) {
+    public void TouristLocation(String placeName, String placeDescription, Location locationCoordinates, int placeThumbnail) {
         mPlaceName = placeName;
+        mPlaceDescription = placeDescription;
+        mLocationCoordinates = locationCoordinates;
+        mPlaceThumbnail = placeThumbnail;
     }
 
     public String getPlaceName() {
         return mPlaceName;
     }
 
-    public void setPlaceDescription(String placeDescription) {
-        mPlaceDescription = placeDescription;
-    }
-
     public String getPlaceDescriptiong() {
         return mPlaceDescription;
     }
 
-    public void setLocationCoordinates(Location locationCoordinates) {
-        mLocationCoordinates = locationCoordinates;
-    }
-
     public Location getLocationCoordinates() {
         return mLocationCoordinates;
-    }
-
-    public void setPlaceThumbnail(int placeThumbnail) {
-        mPlaceThumbnail = placeThumbnail;
     }
 
     public int getPlaceThumbnail() {
