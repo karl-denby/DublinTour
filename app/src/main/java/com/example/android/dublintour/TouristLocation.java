@@ -9,10 +9,10 @@ import android.location.Location;
 public class TouristLocation {
     private String mPlaceName;
     private String mPlaceDescription;
-    private Location mLocationCoordinates;
+    private String mLocationCoordinates;
     private int mPlaceThumbnail;
 
-    public void TouristLocation(String placeName, String placeDescription, Location locationCoordinates, int placeThumbnail) {
+    public TouristLocation(String placeName, String placeDescription, String locationCoordinates, int placeThumbnail) {
         mPlaceName = placeName;
         mPlaceDescription = placeDescription;
         mLocationCoordinates = locationCoordinates;
@@ -27,7 +27,7 @@ public class TouristLocation {
         return mPlaceDescription;
     }
 
-    public Location getLocationCoordinates() {
+    public String getLocationCoordinates() {
         return mLocationCoordinates;
     }
 

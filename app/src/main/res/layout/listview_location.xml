@@ -3,36 +3,38 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView android:id="@+id/placeImage"
-        android:contentDescription="@string/hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:layout_weight="5"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="90"
-        android:orientation="vertical">
 
-        <TextView android:id="@+id/placeName"
+        <ImageView android:id="@+id/placeImage"
+            android:contentDescription="@string/hello"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello" />
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="5"/>
 
-        <TextView android:id="@+id/placeDescription"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello" />
+            android:layout_weight="90"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <TextView android:id="@+id/placeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello" />
 
-    <ImageView android:id="@+id/placeLocation"
-        android:contentDescription="@string/hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:layout_weight="5" />
+            <TextView android:id="@+id/placeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello" />
+
+        </LinearLayout>
+
+        <ImageView android:id="@+id/placeLocation"
+            android:contentDescription="@string/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
+            android:layout_weight="5" />
 
 </LinearLayout>
