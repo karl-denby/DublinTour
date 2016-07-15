@@ -1,16 +1,22 @@
 package com.example.android.dublintour;
 
-import android.graphics.drawable.Drawable;
-import android.location.Location;
-
 /**
  * Created by karl_denby on 12/07/2016.
  */
 public class TouristLocation {
+    private final int NO_LOCATION_IMAGE = -1;
+
     private String mPlaceName;
     private String mPlaceDescription;
     private String mLocationCoordinates;
-    private int mPlaceThumbnail;
+    private int mPlaceThumbnail = NO_LOCATION_IMAGE;
+
+
+    public TouristLocation(String placeName, String placeDescription, String locationCoordinates) {
+        mPlaceName = placeName;
+        mPlaceDescription = placeDescription;
+        mLocationCoordinates = locationCoordinates;
+    }
 
     public TouristLocation(String placeName, String placeDescription, String locationCoordinates, int placeThumbnail) {
         mPlaceName = placeName;
@@ -33,5 +39,9 @@ public class TouristLocation {
 
     public int getPlaceThumbnail() {
         return mPlaceThumbnail;
+    }
+
+    public boolean hasImage() {
+        return mPlaceThumbnail != NO_LOCATION_IMAGE;
     }
 }

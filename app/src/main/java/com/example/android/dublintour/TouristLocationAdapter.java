@@ -1,6 +1,7 @@
 package com.example.android.dublintour;
 
         import android.app.Activity;
+        import android.util.Log;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
@@ -55,35 +56,28 @@ public class TouristLocationAdapter extends ArrayAdapter<TouristLocation> {
         // Get the {@link TouristLocation} object located at this position in the list
         TouristLocation currentTouristLocation = getItem(position);
 
-        // Find the TextView in the listview_location.xml layout with the ID placeName
-        TextView placeTextView = (TextView) listItemView.findViewById(R.id.placeName);
+        // Find the ImageView in the listview_location.xml layout with the ID placeImage
+        ImageView placeImageView = (ImageView) listItemView.findViewById(R.id.placeImage);
 
         // Get the place name from the current TouristLocation object and
-        // set this text on the number TextView
+        // set this text on the name TextView
+        if (currentTouristLocation.hasImage()) {
+            placeImageView.setImageResource(currentTouristLocation.getPlaceThumbnail());
+            placeImageView.setVisibility(View.VISIBLE);
+        } else{
+            placeImageView.setVisibility(View.GONE);
+        }
+
+        // Find the TextView in the listview_location.xml layout with the ID placeName
+        TextView placeTextView = (TextView) listItemView.findViewById(R.id.placeName);
         placeTextView.setText(currentTouristLocation.getPlaceName());
 
         // Find the TextView in the listview_location.xml layout with the ID placeDescription
         TextView placeDescriptionView = (TextView) listItemView.findViewById(R.id.placeDescription);
-
-        // Get the place description from the current TouristLocation object and
-        // set this text on the number TextView
         placeDescriptionView.setText(currentTouristLocation.getPlaceDescription());
 
-
-        // Find the ImageView in the listview_location.xml layout with the ID placeImage
-        ImageView placeImageView = (ImageView) listItemView.findViewById(R.id.placeLocation);
-
-        // Get the place name from the current TouristLocation object and
-        // set this text on the name TextView
-        placeImageView.setImageResource(currentTouristLocation.getPlaceThumbnail());
-
-
-        // Find the ImageView in the listview_location.xml layout with the ID placeImage
-        ImageView placeLocation = (ImageView) listItemView.findViewById(R.id.placeImage);
-
-        // Get the place name from the current TouristLocation object and
-        // set this text on the name TextView
-        placeImageView.setImageResource(currentTouristLocation.getPlaceThumbnail());
+        // Find the ImageView in the listview_location.xml layout with the ID placeLocation
+        ImageView placeLocationView = (ImageView) listItemView.findViewById(R.id.placeLocation);
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
