@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">Dublin Tour</string>
     <string name="hello">Hello</string>
+
+    <string name="hist1_name">"Kilmainham Jail"</string>
+    <string name="hist1_desc">"Prison telling stories of Ireland's past"</string>
+    <string name="hist1_geo">"geo: 53.3419423,-6.310682"</string>
+
+    <string name="hist2_name">"Collins Barracks"</string>
+    <string name="hist2_desc">"Museum"</string>
+    <string name="hist2_geo">"geo: 53.3479397,-6.2881163"</string>
+
+    <string name="hist3_name">"Dublin Castle"</string>
+    <string name="hist3_desc">"Museums, state rooms and Gothic chapel"</string>
+    <string name="hist3_geo">"geo: 53.3445466,-6.2709349"</string>
+
+    <string name="food1_name">"Guinness Storehouse"</string>
+    <string name="food1_desc">"Immersive brand experience and rooftop bar"</string>
+    <string name="food1_geo">"geo: 53.3418772,-6.288898"</string>
 </resources>

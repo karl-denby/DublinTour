@@ -1,14 +1,12 @@
 package com.example.android.dublintour;
 
         import android.app.Activity;
-        import android.util.Log;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.ArrayAdapter;
         import android.widget.ImageView;
         import android.widget.TextView;
-
         import java.util.ArrayList;
 
 /*
@@ -44,6 +42,7 @@ public class TouristLocationAdapter extends ArrayAdapter<TouristLocation> {
      * @param parent The parent ViewGroup that is used for inflation.
      * @return The View for the position in the AdapterView.
      */
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
@@ -54,7 +53,7 @@ public class TouristLocationAdapter extends ArrayAdapter<TouristLocation> {
         }
 
         // Get the {@link TouristLocation} object located at this position in the list
-        TouristLocation currentTouristLocation = getItem(position);
+        final TouristLocation currentTouristLocation = getItem(position);
 
         // Find the ImageView in the listview_location.xml layout with the ID placeImage
         ImageView placeImageView = (ImageView) listItemView.findViewById(R.id.placeImage);
