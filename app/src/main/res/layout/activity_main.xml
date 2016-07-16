@@ -5,11 +5,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Food and Drink"
-        android:id="@+id/btn_food"/>
+        android:background="@color/divider">
+
+        <Button
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food and Drink"
+            android:id="@+id/btn_food"/>
+    </FrameLayout>
 
     <Button
         android:layout_width="match_parent"
