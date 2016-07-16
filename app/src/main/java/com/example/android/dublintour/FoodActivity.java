@@ -21,13 +21,10 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_food);
 
         // Create an ArrayList of TouristLocation objects
-        ArrayList<TouristLocation> touristLocations = new ArrayList<TouristLocation>();
+        final ArrayList<TouristLocation> touristLocations = new ArrayList<TouristLocation>();
 
-        touristLocations.add(new TouristLocation(
-                getString(R.string.food1_name),
-                getString(R.string.food1_desc),
-                getString(R.string.food1_geo)));
-                // no icon
+        touristLocations.add(new TouristLocation(getString(R.string.food1_name),
+                getString(R.string.food1_desc),getString(R.string.food1_geo)));
 
         // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
         // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
@@ -41,8 +38,9 @@ public class FoodActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                //Object o = listView.getItemAtPosition(position);
-                Uri geoLocation = Uri.parse(view.getTag().toString());
+                TouristLocation location = touristLocations.get(position);
+
+                Uri geoLocation = Uri.parse(location.getLocationCoordinates());
                 showMap(geoLocation);
             }
         });

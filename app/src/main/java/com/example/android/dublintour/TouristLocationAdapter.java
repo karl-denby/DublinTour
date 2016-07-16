@@ -15,8 +15,6 @@ package com.example.android.dublintour;
 * */
 public class TouristLocationAdapter extends ArrayAdapter<TouristLocation> {
 
-    public String mLocation = "";
-
     private static final String LOG_TAG = TouristLocationAdapter.class.getSimpleName();
 
     /**
@@ -79,10 +77,6 @@ public class TouristLocationAdapter extends ArrayAdapter<TouristLocation> {
 
         // Find the ImageView in the listview_location.xml layout with the ID placeLocation
         ImageView placeLocationView = (ImageView) listItemView.findViewById(R.id.placeLocation);
-        mLocation = currentTouristLocation.getLocationCoordinates();
-
-        // Store the GPS in a TAG for the onClickListener to pick up later
-        listItemView.setTag(mLocation);
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

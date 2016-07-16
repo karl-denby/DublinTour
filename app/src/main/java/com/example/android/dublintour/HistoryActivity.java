@@ -20,7 +20,7 @@ public class HistoryActivity  extends AppCompatActivity {
         setContentView(R.layout.activity_history);
 
         // Create an ArrayList of TouristLocation objects
-        ArrayList<TouristLocation> touristLocations = new ArrayList<TouristLocation>();
+        final ArrayList<TouristLocation> touristLocations = new ArrayList<TouristLocation>();
 
         touristLocations.add(new TouristLocation(
                 getString(R.string.hist1_name),
@@ -44,14 +44,15 @@ public class HistoryActivity  extends AppCompatActivity {
         TouristLocationAdapter locationAdapter = new TouristLocationAdapter(this, touristLocations);
 
         // Get a reference to the ListView, and attach the adapter to the listView.
-        final ListView listView = (ListView) findViewById(R.id.listView);
+        ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(locationAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                //Object o = listView.getItemAtPosition(position);
-                Uri geoLocation = Uri.parse(view.getTag().toString());
+                TouristLocation location = touristLocations.get(position);
+
+                Uri geoLocation = Uri.parse(location.getLocationCoordinates());
                 showMap(geoLocation);
             }
         });
