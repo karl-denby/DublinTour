@@ -15,6 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".HistoryActivity"
+            android:label="Historical Sites">
+        </activity>
+
+        <activity
+            android:name=".FoodActivity"
+            android:label="Food and Drink">
+        </activity>
     </application>
 
 </manifest>
