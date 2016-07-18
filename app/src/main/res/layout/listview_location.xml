@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:drawSelectorOnTop="true"
-    >
+    android:layout_height="wrap_content"
+    android:drawSelectorOnTop="true">
 
         <ImageView android:id="@+id/placeImage"
             android:contentDescription="@string/hello"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_weight="5"
-            android:layout_gravity="start"/>
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView android:id="@+id/placeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/location_name_tSize"
+            android:text="Place Name"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="90"
             android:padding="4dp"
-            android:layout_gravity="left"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_below="@id/placeImage">
 
-            <TextView android:id="@+id/placeName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/location_name_tSize"/>
+            <ImageView android:id="@+id/placeLocation"
+                android:contentDescription="@string/hello"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:src="@drawable/location"
+                android:padding="4dp"
+                android:layout_weight="5"
+                android:layout_gravity="end"/>
 
             <TextView android:id="@+id/placeDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/location_desc_tSize"/>
+                android:textSize="@dimen/location_desc_tSize"
+                android:textColor="@color/secondary_text"
+                android:text="Description of the place"/>
 
         </LinearLayout>
 
-        <ImageView android:id="@+id/placeLocation"
-            android:contentDescription="@string/hello"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/location"
-            android:padding="4dp"
-            android:layout_weight="5"
-            android:layout_gravity="end"/>
-
-</LinearLayout>
+</RelativeLayout>

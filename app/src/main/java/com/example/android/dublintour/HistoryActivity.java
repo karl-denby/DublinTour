@@ -30,7 +30,8 @@ public class HistoryActivity  extends AppCompatActivity {
         touristLocations.add(new TouristLocation(
                 getString(R.string.hist2_name),
                 getString(R.string.hist2_desc),
-                getString(R.string.hist2_geo)));
+                getString(R.string.hist2_geo),
+                R.mipmap.ic_launcher));
                 // no icon
         touristLocations.add(new TouristLocation(
                 getString(R.string.hist3_name),
