@@ -26,18 +26,18 @@ public class HistoryActivity  extends AppCompatActivity {
                 getString(R.string.hist1_name),
                 getString(R.string.hist1_desc),
                 getString(R.string.hist1_geo),
-                R.mipmap.ic_launcher));
+                R.drawable.kilmainham_gaol));
         touristLocations.add(new TouristLocation(
                 getString(R.string.hist2_name),
                 getString(R.string.hist2_desc),
                 getString(R.string.hist2_geo),
-                R.mipmap.ic_launcher));
+                R.drawable.collins_barracks));
                 // no icon
         touristLocations.add(new TouristLocation(
                 getString(R.string.hist3_name),
                 getString(R.string.hist3_desc),
                 getString(R.string.hist3_geo),
-                R.mipmap.ic_launcher));
+                R.drawable.dublin_castle));
 
         // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
         // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item

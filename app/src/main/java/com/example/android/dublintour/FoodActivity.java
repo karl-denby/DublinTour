@@ -27,7 +27,7 @@ public class FoodActivity extends AppCompatActivity {
                 getString(R.string.food1_name),
                 getString(R.string.food1_desc),
                 getString(R.string.food1_geo),
-                R.mipmap.ic_launcher));
+                R.drawable.kilmainham_gaol));
 
         // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
         // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
