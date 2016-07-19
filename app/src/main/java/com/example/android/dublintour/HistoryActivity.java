@@ -9,9 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import java.util.ArrayList;
 
-/**
- * Created by karld on 16/07/2016.
- */
+
 public class HistoryActivity  extends AppCompatActivity {
 
     @Override
@@ -20,7 +18,7 @@ public class HistoryActivity  extends AppCompatActivity {
         setContentView(R.layout.activity_history);
 
         // Create an ArrayList of TouristLocation objects
-        final ArrayList<TouristLocation> touristLocations = new ArrayList<TouristLocation>();
+        final ArrayList<TouristLocation> touristLocations = new ArrayList<>();
 
         touristLocations.add(new TouristLocation(
                 getString(R.string.hist1_name),

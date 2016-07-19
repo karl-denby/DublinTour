@@ -10,9 +10,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by karld on 16/07/2016.
- */
 public class FoodActivity extends AppCompatActivity {
 
     @Override
@@ -21,7 +18,7 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_food);
 
         // Create an ArrayList of TouristLocation objects
-        final ArrayList<TouristLocation> touristLocations = new ArrayList<TouristLocation>();
+        final ArrayList<TouristLocation> touristLocations = new ArrayList<>();
 
         touristLocations.add(new TouristLocation(
                 getString(R.string.food1_name),

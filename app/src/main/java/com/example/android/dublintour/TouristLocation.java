@@ -1,8 +1,5 @@
 package com.example.android.dublintour;
 
-/**
- * Created by karl_denby on 12/07/2016.
- */
 public class TouristLocation {
     private final int NO_LOCATION_IMAGE = -1;
 

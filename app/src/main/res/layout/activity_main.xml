@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:text="Food and Drink"
             android:id="@+id/btn_food"/>
+
     </FrameLayout>
 
     <Button

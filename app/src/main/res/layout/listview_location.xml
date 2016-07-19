@@ -8,14 +8,12 @@
             android:contentDescription="@string/hello"
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"/>
+            android:scaleType="centerCrop" />
 
         <TextView android:id="@+id/placeName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/location_name_tSize"
-            android:text="Place Name"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:layout_centerInParent="true"/>
@@ -40,8 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/location_desc_tSize"
-                android:textColor="@color/secondary_text"
-                android:text="Description of the place"/>
+                android:textColor="@color/secondary_text" />
 
         </LinearLayout>
 
