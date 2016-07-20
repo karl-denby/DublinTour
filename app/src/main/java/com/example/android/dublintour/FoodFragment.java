@@ -18,10 +18,10 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FamilyFragment extends Fragment {
+public class FoodFragment extends Fragment {
 
 
-    public FamilyFragment() {
+    public FoodFragment() {
         // Required empty public constructor
     }
 
@@ -36,30 +36,25 @@ public class FamilyFragment extends Fragment {
         final ArrayList<TouristLocation> touristLocations = new ArrayList<>();
 
         touristLocations.add(new TouristLocation(
-                getString(R.string.family1_name),
-                getString(R.string.family1_desc),
-                getString(R.string.family1_geo),
-                R.drawable.dublin_zoo));
-        touristLocations.add(new TouristLocation(
-                getString(R.string.family2_name),
-                getString(R.string.family2_desc),
-                getString(R.string.family2_geo),
-                R.drawable.wax_museum));
+                getString(R.string.food1_name),
+                getString(R.string.food1_desc),
+                getString(R.string.food1_geo),
+                R.drawable.guinness_storehouse));
 
         // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
         // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
         // in the list.
         TouristLocationAdapter locationAdapter = new TouristLocationAdapter(getActivity(), touristLocations);
 
-        Log.v("FamilyFragment","About to set adapter");
+        Log.v("FoodFragment","About to set adapter");
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
 
         if (listView != null) {
-            Log.v("FamilyFragment", "try to set Adapter");
+            Log.v("FoodFragment", "try to set Adapter");
             listView.setAdapter(locationAdapter);
         } else{
-            Log.v("FamilyFragment", "did not set Adapter");
+            Log.v("FoodFragment", "did not set Adapter");
         }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

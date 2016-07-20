@@ -12,7 +12,5 @@ public class FamilyActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, new FamilyFragment())
                 .commit();
-
     }
-
 }
