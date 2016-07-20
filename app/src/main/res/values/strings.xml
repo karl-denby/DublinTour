@@ -17,4 +17,20 @@
     <string name="food1_name">Guinness Storehouse</string>
     <string name="food1_desc">Immersive brand experience and rooftop bar</string>
     <string name="food1_geo">geo:0,0?q=53.341874,-6.2867093(Guinness Storehouse)?z=15</string>
+
+    <string name="family1_name">Dublin Zoo</string>
+    <string name="family1_desc">Largest Zoo in Ireland, located in the Phoenix Park</string>
+    <string name="family1_geo">geo:0,0?q=53.3561935,-6.3052898(Dublin Zoo)?z=15</string>
+
+    <string name="family2_name">The National Wax Museum</string>
+    <string name="family2_desc">Family museum containing hundreds of wax versions of famous Irish and international personalities.</string>
+    <string name="family2_geo">geo:0,0?q=53.3451532,-6.2612165(Wax Museum)?z=15</string>
+
+    <string name="landmark1_name">The Spire</string>
+    <string name="landmark1_desc">121m/398ft tall steel pin like monument</string>
+    <string name="landmark1_geo">geo:0,0?q=53.3498112,-6.2602593(The Spire)?z=15</string>
+
+    <string name="landmark2_name">Ha\'penny Bridge</string>
+    <string name="landmark2_desc">Cast Iron pedestrian bridge across the river Liffey</string>
+    <string name="landmark2_geo">geo:0,0?q=53.3463231,-6.263098(Ha\'penny Bridge)?z=15</string>
 </resources>
