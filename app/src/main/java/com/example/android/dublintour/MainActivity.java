@@ -1,6 +1,5 @@
 package com.example.android.dublintour;
 
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,7 +34,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(food_intent);
             }
         });
-        // Anything else we need to do OnCreate
-    }
 
+        // Button object and onclick listener to open the appropriate activity
+        Button bFamily = (Button) findViewById(R.id.btn_family);
+        bFamily.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent family_intent = new Intent(MainActivity.this, FamilyActivity.class);
+
+                startActivity(family_intent);
+            }
+        });
+
+        // Button object and onclick listener to open the appropriate activity
+        Button bLandmark = (Button) findViewById(R.id.btn_landmark);
+        bLandmark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent landmark_intent = new Intent(MainActivity.this, LandmarkActivity.class);
+
+                startActivity(landmark_intent);
+            }
+        });
+        // Anything else we need to do OnCreate
+
+    }
 }
