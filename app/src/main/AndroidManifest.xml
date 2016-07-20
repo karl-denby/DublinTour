@@ -25,6 +25,14 @@
             android:name=".FoodActivity"
             android:label="Food and Drink">
         </activity>
+        <activity
+            android:name=".FamilyActivity"
+            android:label="Family Friendly">
+        </activity>
+        <activity
+            android:name=".LandmarkActivity"
+            android:label="Famous Places">
+        </activity>
     </application>
 
 </manifest>
