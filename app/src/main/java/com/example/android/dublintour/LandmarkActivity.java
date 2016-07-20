@@ -19,6 +19,16 @@ public class LandmarkActivity extends AppCompatActivity{
         // Create an ArrayList of TouristLocation objects
         final ArrayList<TouristLocation> touristLocations = new ArrayList<>();
 
+        touristLocations.add(new TouristLocation(
+                getString(R.string.landmark1_name),
+                getString(R.string.landmark1_desc),
+                getString(R.string.landmark1_geo),
+                R.drawable.the_spire));
+        touristLocations.add(new TouristLocation(
+                getString(R.string.landmark2_name),
+                getString(R.string.landmark2_desc),
+                getString(R.string.landmark2_geo),
+                R.drawable.hapenny_bridge));
         // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
         // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
         // in the list.

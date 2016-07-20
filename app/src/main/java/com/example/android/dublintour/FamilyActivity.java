@@ -19,6 +19,16 @@ public class FamilyActivity extends AppCompatActivity {
         // Create an ArrayList of TouristLocation objects
         final ArrayList<TouristLocation> touristLocations = new ArrayList<>();
 
+        touristLocations.add(new TouristLocation(
+                getString(R.string.family1_name),
+                getString(R.string.family1_desc),
+                getString(R.string.family1_geo),
+                R.drawable.dublin_zoo));
+        touristLocations.add(new TouristLocation(
+                getString(R.string.family2_name),
+                getString(R.string.family2_desc),
+                getString(R.string.family2_geo),
+                R.drawable.wax_museum));
         // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
         // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
         // in the list.
