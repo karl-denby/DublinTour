@@ -15,9 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class HistoryFragment extends Fragment {
 
 
@@ -57,7 +55,7 @@ public class HistoryFragment extends Fragment {
         // in the list.
         TouristLocationAdapter locationAdapter = new TouristLocationAdapter(getActivity(), touristLocations);
 
-        Log.v("HistoryFragment","About to set adapter");
+        Log.v("HistoryFragment", "About to set adapter");
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
 
