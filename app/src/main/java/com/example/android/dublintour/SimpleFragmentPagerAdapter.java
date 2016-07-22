@@ -12,6 +12,13 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
+    private String tabTitles[] = new String[] { "Family", "Food", "History","Landmark" };
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        // Generate title based on item position
+        return tabTitles[position];
+    }
 
     @Override
     public Fragment getItem(int position) {
