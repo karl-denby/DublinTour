@@ -5,36 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <FrameLayout
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/divider">
-
-        <Button
-            android:background="?android:attr/selectableItemBackground"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Food and Drink"
-            android:id="@+id/btn_food"/>
-
-    </FrameLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Historical Places"
-        android:id="@+id/btn_history"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Family Friendly"
-        android:id="@+id/btn_family"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Landmarks"
-        android:id="@+id/btn_landmark"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
