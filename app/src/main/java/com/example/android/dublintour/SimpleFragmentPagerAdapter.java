@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+
 /**
  * Provides the appropriate {@link Fragment} for a view pager.
  */
@@ -14,7 +15,10 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     }
 
     private String tabTitles[] = new String[] {
-            "Family", "Food/Drink", "History","Landmark"
+            App.getContext().getString(R.string.category_family),
+            App.getContext().getString(R.string.category_food),
+            App.getContext().getString(R.string.category_history),
+            App.getContext().getString(R.string.category_landmark)
     };
 
     @Override

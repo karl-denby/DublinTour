@@ -33,4 +33,9 @@
     <string name="landmark2_name">Ha\'penny Bridge</string>
     <string name="landmark2_desc">Cast Iron pedestrian bridge across the river Liffey</string>
     <string name="landmark2_geo">geo:0,0?q=53.3463231,-6.263098(Ha\'penny Bridge)?z=15</string>
+
+    <string name="category_family">"Family"</string>
+    <string name="category_food">"Food/Drink"</string>
+    <string name="category_history">"History"</string>
+    <string name="category_landmark">"Landmark"</string>
 </resources>
