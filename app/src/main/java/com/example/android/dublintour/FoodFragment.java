@@ -15,9 +15,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class FoodFragment extends Fragment {
 
 
@@ -46,15 +43,11 @@ public class FoodFragment extends Fragment {
         // in the list.
         TouristLocationAdapter locationAdapter = new TouristLocationAdapter(getActivity(), touristLocations);
 
-        Log.v("FoodFragment", "About to set adapter");
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
 
         if (listView != null) {
-            Log.v("FoodFragment", "try to set Adapter");
             listView.setAdapter(locationAdapter);
-        } else{
-            Log.v("FoodFragment", "did not set Adapter");
         }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -49,15 +49,11 @@ public class LandmarkFragment extends Fragment {
         // in the list.
         TouristLocationAdapter locationAdapter = new TouristLocationAdapter(getActivity(), touristLocations);
 
-        Log.v("Landmark", "About to set adapter");
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
 
         if (listView != null) {
-            Log.v("LandmarkFragment", "try to set Adapter");
             listView.setAdapter(locationAdapter);
-        } else{
-            Log.v("LandmarkFragment", "did not set Adapter");
         }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -74,6 +70,4 @@ public class LandmarkFragment extends Fragment {
 
         return rootView;
     }
-
-
 }

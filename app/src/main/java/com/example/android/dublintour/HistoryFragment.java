@@ -55,15 +55,11 @@ public class HistoryFragment extends Fragment {
         // in the list.
         TouristLocationAdapter locationAdapter = new TouristLocationAdapter(getActivity(), touristLocations);
 
-        Log.v("HistoryFragment", "About to set adapter");
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
 
         if (listView != null) {
-            Log.v("HistoryFragment", "try to set Adapter");
             listView.setAdapter(locationAdapter);
-        } else{
-            Log.v("HistoryFragment", "did not set Adapter");
         }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -80,6 +76,4 @@ public class HistoryFragment extends Fragment {
 
         return rootView;
     }
-
-
 }

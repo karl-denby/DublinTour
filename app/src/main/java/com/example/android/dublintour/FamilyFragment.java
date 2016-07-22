@@ -48,15 +48,11 @@ public class FamilyFragment extends Fragment {
         // in the list.
         TouristLocationAdapter locationAdapter = new TouristLocationAdapter(getActivity(), touristLocations);
 
-        Log.v("FamilyFragment","About to set adapter");
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) rootView.findViewById(R.id.listView);
 
         if (listView != null) {
-            Log.v("FamilyFragment", "try to set Adapter");
             listView.setAdapter(locationAdapter);
-        } else{
-            Log.v("FamilyFragment", "did not set Adapter");
         }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
