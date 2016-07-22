@@ -12,7 +12,10 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
-    private String tabTitles[] = new String[] { "Family", "Food", "History","Landmark" };
+
+    private String tabTitles[] = new String[] {
+            "Family", "Food/Drink", "History","Landmark"
+    };
 
     @Override
     public CharSequence getPageTitle(int position) {
